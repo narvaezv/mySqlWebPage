@@ -2,7 +2,7 @@ var updateElement = document.getElementById('update');
 var updivElement = document.getElementById('outputUpdate');
 
 updateElement.onchange = function () {
-    var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+    var selectedValue = updateElement.options[updateElement.selectedIndex].value;
     if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="id"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombre"><br>';
