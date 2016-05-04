@@ -50,7 +50,7 @@
 
 <p>First select what you want to insert:</p>
           <select name="selection" id="selector">
-              <option value="volvo">Volvo</option>
+              <option value="empleado">Empleado</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
           </select>
@@ -62,12 +62,13 @@
 
                 selectElement.onchange = function () {
                     var selectedValue = selectElement.options[selectElement.selectedIndex].value;
-                    if (selectedValue == 'volvo') {
-                        divElement.innerHTML = '<p>volvo</p>';
+                    if (selectedValue == 'Empleado') {
+                        var id = '<input type="text" name="id">'
+                        divElement.innerHTML = '<p> </p>' + id +'<p>Has seleccionado empleado.</p>';
                     } else if (selectedValue == 'saab') {
-                        divElement.innerHTML = '<p>saab</p>';
+                        divElement.innerHTML = '<p> </p><p>saab</p>';
                     } else if (selectedValue == 'mercedes') {
-                        divElement.innerHTML = '<p>mercedes</p>';
+                        divElement.innerHTML = '<p> </p><p>mercedes</p>';
                     }
                 };
 
