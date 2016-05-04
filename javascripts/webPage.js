@@ -8,7 +8,7 @@ selectElement.onchange = function () {
         var form = '<form>First name:<br>' + id + '<br></form>';
         divElement.innerHTML = '<p> </p><p>Has seleccionado empleado.</p>' + form;
     } else if (selectedValue == 'saab') {
-        divElement.innerHTML = '<p> </p><p>saab3</p>';
+        divElement.innerHTML = '<p> </p><p>saab2</p>';
     } else if (selectedValue == 'mercedes') {
         divElement.innerHTML = '<p> </p><p>mercedes</p>';
     }
