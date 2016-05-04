@@ -63,8 +63,9 @@
                 selectElement.onchange = function () {
                     var selectedValue = selectElement.options[selectElement.selectedIndex].value;
                     if (selectedValue == 'Empleado') {
-                        var id = '<input type="text" name="id">'
-                        divElement.innerHTML = '<p> </p>' + id +'<p>Has seleccionado empleado.</p>';
+                        var id = '<input type="text" name="id">';
+                        var form = '<form>First name: <br>' + id + '</form>';
+                        divElement.innerHTML = '<p> </p>' + form +'<p>Has seleccionado empleado.</p>';
                     } else if (selectedValue == 'saab') {
                         divElement.innerHTML = '<p> </p><p>saab</p>';
                     } else if (selectedValue == 'mercedes') {
