@@ -42,7 +42,7 @@
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL Editor.</h3>
 
 <p>In this web aplication we´re trying to show how does replication works. For further info on replication on mySql click <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html"> here. </a>
-          For this example we are showing three basic functionalities: Insert, Update, Delete and Select. We also are using help of 
+          For this example we are showing four basic functionalities: Insert, Update, Delete and Select. We also are using help of 
           <a href="https://nodejs.org/en/"> Node.js </a>. We hope everything works fine.</p>
 
 <h3>
@@ -55,26 +55,8 @@
               <option value="mercedes">Material</option>
           </select>
           <div id="output"> </div>
-          <script type="text/javascript">
-
-                var selectElement = document.getElementById('selector');
-                var divElement = document.getElementById('output');
-
-                selectElement.onchange = function () {
-                    var selectedValue = selectElement.options[selectElement.selectedIndex].value;
-                    if (selectedValue == 'empleado') {
-                        var id = '<input type="text" name="id">';
-                        var form = '<form>First name:<br>' + id + '<br></form>';
-                        divElement.innerHTML = '<p> </p>' + form +'<p>Has seleccionado empleado.</p>';
-                    } else if (selectedValue == 'saab') {
-                        divElement.innerHTML = '<p> </p><p>saab1</p>';
-                    } else if (selectedValue == 'mercedes') {
-                        divElement.innerHTML = '<p> </p><p>mercedes</p>';
-                    }
-                };
-
+          <script src="javascripts/webPage.js">
           </script>
-
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
