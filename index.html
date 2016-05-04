@@ -51,8 +51,8 @@
 <p>First select what you want to insert:</p>
           <select name="selection" id="selector">
               <option value="empleado">Empleado</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
+              <option value="saab">Servicio</option>
+              <option value="mercedes">Material</option>
           </select>
           <div id="output"> </div>
           <script type="text/javascript">
@@ -64,10 +64,10 @@
                     var selectedValue = selectElement.options[selectElement.selectedIndex].value;
                     if (selectedValue == 'Empleado') {
                         var id = '<input type="text" name="id">';
-                        var form = '<form>First name: <br>' + id + '</form>';
+                        var form = '<form>First name:<br>' + id + '<br></form>';
                         divElement.innerHTML = '<p> </p>' + form +'<p>Has seleccionado empleado.</p>';
                     } else if (selectedValue == 'saab') {
-                        divElement.innerHTML = '<p> </p><p>saab</p>';
+                        divElement.innerHTML = '<p> </p><p>saab1</p>';
                     } else if (selectedValue == 'mercedes') {
                         divElement.innerHTML = '<p> </p><p>mercedes</p>';
                     }
