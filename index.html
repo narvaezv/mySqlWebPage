@@ -43,12 +43,35 @@
 
 <p>In this web aplication we´re trying to show how does replication works. For further info on replication on mySql click <a href="http://dev.mysql.com/doc/refman/5.7/en/replication.html"> here. </a>
           For this example we are showing three basic functionalities: Insert, Update, Delete and Select. We also are using help of 
-          <a href="https://nodejs.org/en/"> Node.js </a> We hope everything works fine.</p>
+          <a href="https://nodejs.org/en/"> Node.js </a>. We hope everything works fine.</p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="insert" class="anchor" href="#insert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Insert</h3>
 
-<p>Aloha. We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>First select what you want to insert:</p>
+          <select name="selection" id="selector">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+          </select>
+          <div id="output"> </div>
+          <script type="text/javascript">
+
+                var selectElement = document.getElementById('selector');
+                var divElement = document.getElementById('output');
+
+                selectElement.onchange = function () {
+                    var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+                    if (selectedValue == 'volvo') {
+                        divElement.innerHTML = '<p>volvo</p>';
+                    } else if (selectedValue == 'saab') {
+                        divElement.innerHTML = '<p>saab</p>';
+                    } else if (selectedValue == 'mercedes') {
+                        divElement.innerHTML = '<p>mercedes</p>';
+                    }
+                };
+
+          </script>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
