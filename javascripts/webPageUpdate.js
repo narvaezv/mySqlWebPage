@@ -41,8 +41,8 @@ updateElement.onchange = function () {
         var ids = 'ID servicio:<br><input type="text" id="idsu"><br>';
         var idc = 'ID cliente:<br><input type="text" id="idcu"><br>';
         var idm = 'ID material:<br><input type="text" id="idmu"><br>';
-        var fact = 'Facturada:<input type="radio" id="factu"><br>';
-        var nfact = 'No facturada:<input type="radio" id="nfactu"><br>'
+        var fact = 'Facturada: <input type="radio" id="factu"><br>';
+        var nfact = 'No facturada: <input type="radio" id="nfactu"><br>'
         var form = '<form>' + id + ids + idc + idm + fact + nfact + '</form>';
         updivElement.innerHTML = '<p> </p><p>Has seleccionado remisiones.</p>' + form + '<p> </p>';
     } else if (selectedValue == 'material') {

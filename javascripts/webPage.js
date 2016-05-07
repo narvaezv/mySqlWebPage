@@ -41,7 +41,7 @@ insertElement.onchange = function () {
         var ids = 'ID servicio:<br><input type="text" id="ids"><br>';
         var idc = 'ID cliente:<br><input type="text" id="idc"><br>';
         var idm = 'ID material:<br><input type="text" id="idm"><br>';
-        var fact = 'Facturada:<input type="radio" id="fact"><br>';
+        var fact = 'Facturada: <input type="radio" id="fact"><br>';
         var nfact = 'No facturada:<input type="radio" id="nfact"><br>'
         var form = '<form>' + id + ids + idc + idm + fact + nfact + '</form>';
         divElement.innerHTML = '<p> </p><p>Has seleccionado remisiones.</p>' + form + '<p> </p>';

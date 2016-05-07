@@ -41,8 +41,8 @@ deleteElement.onchange = function () {
         var ids = 'ID servicio:<br><input type="text" id="idsd"><br>';
         var idc = 'ID cliente:<br><input type="text" id="idcd"><br>';
         var idm = 'ID material:<br><input type="text" id="idmd"><br>';
-        var fact = 'Facturada:<input type="radio" id="factd"><br>';
-        var nfact = 'No facturada:<input type="radio" id="nfactd"><br>'
+        var fact = 'Facturada: <input type="radio" id="factd"><br>';
+        var nfact = 'No facturada: <input type="radio" id="nfactd"><br>'
         var form = '<form>' + id + ids + idc + idm + fact + nfact + '</form>';
         divdelElement.innerHTML = '<p> </p><p>Has seleccionado remisiones.</p>' + form + '<p> </p>';
     } else if (selectedValue == 'material') {
