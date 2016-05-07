@@ -10,7 +10,7 @@ insertElement.onchange = function () {
         var apellido = 'Apellido<br><input type="text" id="apellido"><br>';
         var telefono = 'Telefono<br><input type="text" id="telefono"><br>';
         var tipo = 'Tipo<br><input type="text" id="tipo"><br>'
-        var form = '<form>' + id + nombre + apellido + telefono + tipo + submit + '</form>';
+        var form = '<form action="php/insertEmpleado.php">' + id + nombre + apellido + telefono + tipo + submit + '</form>';
         divElement.innerHTML = '<p> </p><p>Has seleccionado empleado.</p>' + form + '<p> </p>';
     } else if (selectedValue == 'servicio') {
         var idserv = 'ID:<br><input type="text" id="idser"><br>';
