@@ -1,11 +1,11 @@
 <html>
 <body>
 <?php
-$id = $POST_['id'];
-$nombre = $POST_['nombre'];
-$apellido = $POST_['apellido'];
-$telefono = $POST_['telefono'];
-$tipo = $POST_['tipo'];
+$id = $_POST['id'];
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$telefono = $_POST['telefono'];
+$tipo = $_POST['tipo'];
 echo "<p>Your name is $nombre y tu id es $id<p/>";
 ?>
 </body>
