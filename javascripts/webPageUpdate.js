@@ -5,7 +5,7 @@ var demo = document.getElementById('demo2');
 updateElement.onchange = function () {
     var selectedValue = updateElement.options[updateElement.selectedIndex].value;
     demo.innerHTML = selectedValue;
-    if (selectedValue == 'empleado') {
+    /*if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="id"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombre"><br>';
         var apellido = 'Apellido<br><input type="text" id="apellido"><br>';
@@ -52,5 +52,5 @@ updateElement.onchange = function () {
         var nombre = 'Nombre:<br><input type="text" id="nombre"><br>';
         var form = '<form>' + id + nombre + '</form>';
         updivElement.innerHTML = '<p> </p><p>Has seleccionado material.</p>' + form + '<p> </p>';
-    }
+    }*/
 };
