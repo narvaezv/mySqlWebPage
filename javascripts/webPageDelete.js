@@ -1,5 +1,5 @@
 var deleteElement = document.getElementById('delete');
-var divdelElement = document.getElementById('outputInsertar');
+var divdelElement = document.getElementById('outputDelete');
 
 deleteElement.onchange = function () {
     var selectedValue = deleteElement.options[deleteElement.selectedIndex].value;
