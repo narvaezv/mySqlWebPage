@@ -1,10 +1,8 @@
 var updateElement = document.getElementById('update');
 var updivElement = document.getElementById('outputUpdate');
-var demo = document.getElementById('demo2');
 
 updateElement.onchange = function () {
     var selectedValue = updateElement.options[updateElement.selectedIndex].value;
-    demo.innerHTML = selectedValue;
     if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="idu"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombreu"><br>';
