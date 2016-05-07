@@ -3,7 +3,7 @@ var updivElement = document.getElementById('outputUpdate');
 
 updateElement.onchange = function () {
     var selectedValue = updateElement.options[updateElement.selectedIndex].value;
-    var submit = '<input type="submit" value="Actualizar">';
+    var submit = '<br><input type="submit" value="Actualizar">';
     if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="idu"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombreu"><br>';

@@ -3,7 +3,7 @@ var divdelElement = document.getElementById('outputDelete');
 
 deleteElement.onchange = function () {
     var selectedValue = deleteElement.options[deleteElement.selectedIndex].value;
-    var submit = '<input type="submit" value="Eliminar">';
+    var submit = '<br><input type="submit" value="Eliminar">';
     if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="idd"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombred"><br>';

@@ -3,7 +3,7 @@ var divElement = document.getElementById('outputInsertar');
 
 insertElement.onchange = function () {
     var selectedValue = insertElement.options[insertElement.selectedIndex].value;
-    var submit = '<input type="submit" value="Insertar">';
+    var submit = '<br><input type="submit" value="Insertar">';
     if (selectedValue == 'empleado') {
         var id = 'ID:<br><input type="text" id="id"><br>';
         var nombre = 'Nombre:<br><input type="text" id="nombre"><br>';
