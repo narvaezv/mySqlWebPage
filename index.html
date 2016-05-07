@@ -75,7 +75,14 @@
               <option value="material">Material</option>
           </select>
           <div id="outputUpdate"><p> </p></div>
-          <script src="javascripts/webPageUpdate.js"></script>
+          <script>
+              var updateElement = document.getElementById('update');
+              var demo = document.getElementById('demo2');
+              updateElement.onchange = function () {
+                  var selectedValue = updateElement.options[updateElement.selectedIndex].value;
+                  demo.innerHTML = selectedValue;
+              }
+          </script>
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
